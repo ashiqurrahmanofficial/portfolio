@@ -70,7 +70,7 @@ nav.scrolled{border-color:var(--border)}
   border-left:1px solid rgba(196,149,106,.07)}
 .hero-bg-line::before{content:'';position:absolute;inset:0;
   background:repeating-linear-gradient(0deg,transparent,transparent 79px,rgba(196,149,106,.04) 79px,rgba(196,149,106,.04) 80px)}
-.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:end;padding-top:140px;padding-bottom:80px}
+.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:end;padding-top:140px;padding-bottom:80px;max-width:1600px;margin:0 auto;width:100%}
 .hero-pre{display:flex;align-items:center;gap:12px;margin-bottom:32px}
 .hero-pre-line{width:40px;height:1px;background:linear-gradient(to right,var(--gold),transparent)}
 .hero-pre-text{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
@@ -124,14 +124,14 @@ h1.hero-title em{font-style:italic;color:var(--gold)}
 .rc-num span{color:var(--gold)}
 .rc-label{font-size:13px;font-weight:600;color:var(--ivory);margin-bottom:2px}
 .rc-sub{font-size:12px;color:var(--mid)}
-.hero-bottom-bar{position:relative;z-index:2;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.hero-bottom-bar{position:relative;z-index:2;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:20px 0;max-width:1600px;margin:0 auto;width:100%}
 .hbb-item{display:flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--mid)}
 .hbb-dot{width:6px;height:6px;border-radius:50%;background:var(--border2)}
 .hbb-dot.green{background:var(--green);box-shadow:0 0 0 3px rgba(74,222,128,.12);animation:pulse 2.5s ease infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(74,222,128,.35)}50%{box-shadow:0 0 0 7px rgba(74,222,128,0)}}
 
 /* SECTIONS */
-.section-inner{max-width:1600px;margin:0 auto;padding:100px 60px}
+.section-inner{max-width:1160px;margin:0 auto;padding:100px 60px}
 .label-row{display:flex;align-items:center;gap:16px;margin-bottom:56px}
 .section-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--mid)}
 .label-line{flex:1;height:1px;background:var(--border);max-width:80px}
@@ -421,7 +421,7 @@ a,button{-webkit-tap-highlight-color:transparent}
 
 <!-- NAV -->
 <nav id="main-nav">
-  <a href="#" class="nav-logo">Dev Ashiq</a>
+  <a href="#" class="nav-logo">Ashiqur Rahman <sup>Studio</sup></a>
   <ul class="nav-center">
     <li><a href="#value">Services</a></li>
     <li><a href="#work">Work</a></li>
@@ -430,7 +430,7 @@ a,button{-webkit-tap-highlight-color:transparent}
   </ul>
   <div class="nav-right">
     <span class="nav-tag">Open to Work</span>
-    <a href="https://calendly.com/ashiqurtech/30min" class="nav-btn" target="_blank">Book a Call</a>
+    <a href="#cta" class="nav-btn">Book a Call</a>
   </div>
 </nav>
 
@@ -444,7 +444,7 @@ a,button{-webkit-tap-highlight-color:transparent}
         <span class="hero-pre-text">Web Dev · eCommerce · SEO & Strategy</span>
       </div>
       <h1 class="hero-title">Your website<br>should work as<br>hard as <em>you do.</em></h1>
-      <p class="hero-desc">I'm Ashiq, a web developer and digital strategist who builds websites that attract the right clients, convert visitors into revenue, and give your brand the presence it deserves.</p>
+      <p class="hero-desc">I'm Ashiq — a web developer and digital strategist who builds websites that attract the right clients, convert visitors into revenue, and give your brand the presence it deserves.</p>
       <div class="hero-actions">
         <a href="#work" class="btn-dark">See My Work →</a>
         <a href="#engage" class="btn-outline">How We Work</a>
@@ -455,7 +455,7 @@ a,button{-webkit-tap-highlight-color:transparent}
       <div class="hero-photo-wrap">
         <div class="hero-photo-glow"></div>
         <div class="hero-photo-ring">
-          <img class="hero-photo" src="cropped-ashiqur.webp" alt="Ashiqur Rahman">
+          <img class="hero-photo" src="ashiqur.webp" alt="Ashiqur Rahman">
           <div class="hero-photo-badge">
             <span class="hpb-dot"></span>
             <span class="hpb-text">Available</span>
@@ -492,6 +492,7 @@ a,button{-webkit-tap-highlight-color:transparent}
     <div class="hbb-item"><span class="hbb-dot green"></span>Available for New Projects</div>
     <div class="hbb-item">7+ Years Experience</div>
     <div class="hbb-item">500+ Projects Delivered</div>
+    <div class="hbb-item">US · EU · Global</div>
   </div>
 </section>
 
@@ -564,10 +565,10 @@ a,button{-webkit-tap-highlight-color:transparent}
     </div>
     <div class="work-intro-row">
       <h2 class="work-title">Projects that<br><em>delivered.</em></h2>
-      <a href="https://ashiqurrahman.com.bd/portfolio/" target="_blank" class="work-view-all">Full Portfolio →</a>
+      <a href="/portfolio/" class="work-view-all">Full Portfolio →</a>
     </div>
     <div class="case-studies">
-      <a href="https://ashiqurrahman.com.bd/portfolio/" target="_blank" class="case-study reveal">
+      <a href="/portfolio/" class="case-study reveal">
         <span class="cs-num">01</span>
         <div class="cs-main">
           <div class="cs-industry">Healthcare · WordPress</div>
@@ -580,7 +581,7 @@ a,button{-webkit-tap-highlight-color:transparent}
         </div>
         <div class="cs-arrow">↗</div>
       </a>
-      <a href="https://ashiqurrahman.com.bd/portfolio/" target="_blank" class="case-study reveal">
+      <a href="/portfolio/" class="case-study reveal">
         <span class="cs-num">02</span>
         <div class="cs-main">
           <div class="cs-industry">Hospitality · WordPress</div>
@@ -593,7 +594,7 @@ a,button{-webkit-tap-highlight-color:transparent}
         </div>
         <div class="cs-arrow">↗</div>
       </a>
-      <a href="https://ashiqurrahman.com.bd/portfolio/" target="_blank" class="case-study reveal">
+      <a href="/portfolio/" class="case-study reveal">
         <span class="cs-num">03</span>
         <div class="cs-main">
           <div class="cs-industry">Fashion · WooCommerce</div>
@@ -606,7 +607,7 @@ a,button{-webkit-tap-highlight-color:transparent}
         </div>
         <div class="cs-arrow">↗</div>
       </a>
-      <a href="https://mamarosecleaningco.com/" target="_blank" class="case-study reveal">
+      <a href="/portfolio/" class="case-study reveal">
         <span class="cs-num">04</span>
         <div class="cs-main">
           <div class="cs-industry">Home Services · WordPress</div>
@@ -765,7 +766,7 @@ a,button{-webkit-tap-highlight-color:transparent}
           <div class="ec-item"><span class="ec-check">✓</span>Mobile-first & fully responsive</div>
           <div class="ec-item"><span class="ec-check">✓</span>Social media kit available as add-on</div>
         </div>
-        <a href="https://www.fiverr.com/wdev_ashiqur" target="_blank" class="ec-cta ec-cta-outline">Start a Project →</a>
+        <a href="https://www.fiverr.com/s/gDbyLo9" target="_blank" class="ec-cta ec-cta-outline">Start a Project →</a>
       </div>
       <div class="engage-card featured reveal reveal-delay-1">
         <span class="ec-tag">Most Popular</span>
@@ -777,7 +778,7 @@ a,button{-webkit-tap-highlight-color:transparent}
           <div class="ec-item"><span class="ec-check">✓</span>Payment & checkout fully configured</div>
           <div class="ec-item"><span class="ec-check">✓</span>Social media kit available as add-on</div>
         </div>
-        <a href="https://www.fiverr.com/wdev_ashiqur" target="_blank" class="ec-cta ec-cta-gold">Let's Build Your Store →</a>
+        <a href="https://www.fiverr.com/s/gDbyLo9" target="_blank" class="ec-cta ec-cta-gold">Let's Build Your Store →</a>
       </div>
       <div class="engage-card reveal reveal-delay-2">
         <span class="ec-tag">Growth</span>
@@ -789,7 +790,7 @@ a,button{-webkit-tap-highlight-color:transparent}
           <div class="ec-item"><span class="ec-check">✓</span>AI-assisted content briefs & copy</div>
           <div class="ec-item"><span class="ec-check">✓</span>Monthly strategy review & reporting</div>
         </div>
-        <a href="https://ashiqurrahman.com.bd/contact/" target="_blank" class="ec-cta ec-cta-dark">Get in Touch →</a>
+        <a href="https://calendly.com/ashiqurtech/30min" target="_blank" class="ec-cta ec-cta-dark">Get in Touch →</a>
       </div>
     </div>
   </div>
@@ -802,8 +803,8 @@ a,button{-webkit-tap-highlight-color:transparent}
       <p class="cta-pre">Ready to start?</p>
       <h2 class="cta-title">Let's build something<br>you're proud to <em>show off.</em></h2>
       <div class="cta-actions">
-        <a href="https://ashiqurrahman.com.bd/contact/" target="_blank" class="btn-dark">Start a Conversation →</a>
-        <a href="https://www.fiverr.com/wdev_ashiqur" target="_blank" class="btn-outline">View on Fiverr</a>
+        <a href="https://calendly.com/ashiqurtech/30min" target="_blank" class="btn-dark">Start a Conversation →</a>
+        <a href="https://www.fiverr.com/s/gDbyLo9" target="_blank" class="btn-outline">View on Fiverr</a>
       </div>
     </div>
     <div class="cta-right">
@@ -841,25 +842,26 @@ a,button{-webkit-tap-highlight-color:transparent}
   <div>
     <div class="footer-col-title">Services</div>
     <div class="footer-links-list">
-      <a href="https://ashiqurrahman.com.bd/services/#web" target="_blank">Website Design</a>
-      <a href="https://ashiqurrahman.com.bd/services/#dev" target="_blank">eCommerce Development</a>
-      <a href="https://ashiqurrahman.com.bd/services/#seo" target="_blank">SEO Optimization</a>
+      <a href="/services/">Website Design</a>
+      <a href="/services/">eCommerce Development</a>
+      <a href="/services/">SEO Optimization</a>
+      <a href="https://ashiqurrahman.com.bd/services/#smm" target="_blank">Social Media Marketing</a>
     </div>
   </div>
   <div>
     <div class="footer-col-title">Quick Links</div>
     <div class="footer-links-list">
-      <a href="https://ashiqurrahman.com.bd/about/" target="_blank">About</a>
-      <a href="https://ashiqurrahman.com.bd/portfolio/" target="_blank">Portfolio</a>
-      <a href="https://ashiqurtech.com/" target="_blank">Ashiqurtech Agency</a>
-      <a href="https://ashiqurrahman.com.bd/contact/" target="_blank">Contact</a>
+      <a href="/about/">About</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a href="https://ashiqurtech.com" target="_blank">Ashiqurtech Agency</a>
+      <a href="https://calendly.com/ashiqurtech/30min" target="_blank">Contact</a>
     </div>
   </div>
   <div>
     <div class="footer-col-title">Connect</div>
     <div class="footer-links-list">
       <a href="https://www.linkedin.com/in/ashiqurrahmanofficial/" target="_blank">LinkedIn</a>
-      <a href="https://www.fiverr.com/wdev_ashiqur" target="_blank">Fiverr</a>
+      <a href="https://www.fiverr.com/s/gDbyLo9" target="_blank">Fiverr</a>
       <a href="https://www.upwork.com/freelancers/~013fc07e6e863f9f1c" target="_blank">Upwork</a>
       <a href="https://twitter.com/ashiqurrahmanoc" target="_blank">Twitter / X</a>
     </div>
